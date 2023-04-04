@@ -1,0 +1,42 @@
+# Name
+Nickname 1337Relay
+
+# Address
+Address  # <- ADD IP ADDRESS HERE
+
+# ORPort IPv4Only
+ORPort 9001 IPv4Only # <- Be sure to open ports 9001 and 9030
+
+# DirPort
+DirPort 9030 # <- Be sure to open ports 9001 and 9030
+
+# Socks Port
+SocksPort 0
+
+# ExitRelay
+ExitRelay 0
+ExitPolicy reject6 *:*, reject *:*
+
+# Memory Config # <- ALLOCATE MEMORY HERE
+MaxMemInQueues 4 GB
+
+# Bandwidth Config # <- MODIFY BANDWIDTH HERE
+BandwidthRate 5 MBytes
+BandwidthBurst 10 MBytes
+RelayBandwidthRate 5 MBytes
+RelayBandwidthBurst 10 MBytes
+MaxAdvertisedBandwidth 50 MBits
+
+# Logs
+Log notice file C:\TorRelay\tor\log\notices.log
+
+# Geo Config
+GeoIPFile C:\TorRelay\data\geoip
+GeoIPv6File C:\TorRelay\data\geoip6
+
+#Relay Operator Email
+ContactInfo 1337relay@protonmail.com
+
+# My family members
+MyFamily
+A31621B40B3B17961D441C7D5DB2EF06B9C2203A
